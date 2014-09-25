@@ -1,0 +1,37 @@
+create table user(
+name varchar(10),
+email varchar(30),
+password varchar(20),
+tel varchar(15)
+);
+
+
+
+
+
+create table goods(
+goodsname varchar(30),
+user varchar(30),
+price int,
+intro varchar(100),
+xx varchar(500),
+fenlei varchar(10),
+tel varchar(15)
+);
+
+insert into goods values('考研英语','123',40,'考研英语','2015考研必备','book');
+insert into goods values('考研英语','123',40,'考研英语','2014考研必备','book');
+insert into goods values('考研英语','123',40,'考研英语','2013考研必备','book');
+insert into goods values('考研英语','123',40,'考研英语','2012考研必备','书籍');
+insert into goods values('三星手机','88',1040,'三星手机','9成新三星手机','手机');
+insert into goods values('三星手机','88',1040,'三星手机','8成新三星手机','手机');
+insert into goods values('三星手机','88',1040,'三星手机','7成新三星手机','手机');
+
+
+
+create table bargain(
+fuser varchar(30),
+muser varchar(30),
+bargain_price int,
+bargain_time datetime
+);
